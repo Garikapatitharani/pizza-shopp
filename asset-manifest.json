@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pizaa-shop/static/css/main.ea7788d2.css",
-    "main.js": "/pizaa-shop/static/js/main.1105cbea.js",
-    "static/js/156.b700a726.chunk.js": "/pizaa-shop/static/js/156.b700a726.chunk.js",
-    "index.html": "/pizaa-shop/index.html",
-    "main.ea7788d2.css.map": "/pizaa-shop/static/css/main.ea7788d2.css.map",
-    "main.1105cbea.js.map": "/pizaa-shop/static/js/main.1105cbea.js.map",
-    "156.b700a726.chunk.js.map": "/pizaa-shop/static/js/156.b700a726.chunk.js.map"
+    "main.css": "/piza-shopp/static/css/main.ea7788d2.css",
+    "main.js": "/piza-shopp/static/js/main.bb6dbfd6.js",
+    "static/js/156.b700a726.chunk.js": "/piza-shopp/static/js/156.b700a726.chunk.js",
+    "index.html": "/piza-shopp/index.html",
+    "main.ea7788d2.css.map": "/piza-shopp/static/css/main.ea7788d2.css.map",
+    "main.bb6dbfd6.js.map": "/piza-shopp/static/js/main.bb6dbfd6.js.map",
+    "156.b700a726.chunk.js.map": "/piza-shopp/static/js/156.b700a726.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea7788d2.css",
-    "static/js/main.1105cbea.js"
+    "static/js/main.bb6dbfd6.js"
   ]
 }
