@@ -41,11 +41,7 @@ const OrderForm = ({ addOrder }) => {
         </div>
       </div>
 
-      <button 
-        type="submit" 
-      >
-        Place Order
-      </button>
+      <button className='center-order-button' type="submit" > Place Order </button>
     </form>
     
   );

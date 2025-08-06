@@ -1,5 +1,7 @@
 .App {
     text-align: center;
+    background-color: rgb(225, 66, 66);
+    padding: 8px;
   }
   
   .pizza-board {
@@ -27,9 +29,10 @@
     margin-top: 5px;
     background-color: rgba(91, 138, 214, 0.812);
     padding: 2px 4px;
-    margin:auto;
+    justify-content: center;
     border-radius: 2%;
     font-weight: bold;
+    width:100px;   
   }
   
   body{
@@ -38,7 +41,7 @@
  }
 
 h1{
-    font-style:italic;
+    font-style:oblique;
     background-color: rgb(244, 35, 35);
     box-shadow: 0 4px 8px;
     display: inline-block;

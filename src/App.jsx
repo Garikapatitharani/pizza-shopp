@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import OrderForm from './components/OrderForm';
 import PizzaBoard from './components/PizzaBoard';
 import MainDisplay from './components/MainDisplay';
@@ -8,24 +8,28 @@ function App() {
   const [orders, setOrders] = useState([]);
   const maxOrdersLimit = 4;
 
- 
-  const updateOrderTime = (orderId, stage) => {
-    setOrders(orders.map(order => {
+
+  const updateOrderTime = useCallback((orderId, stage) => {
+  setOrders(prevOrders =>
+    prevOrders.map(order => {
       if (order.id === orderId) {
         const currentTime = Date.now();
         const updatedTimeSpent = { ...order.timeSpent };
-        
+
         if (stage === "placed" && !updatedTimeSpent.placedStart) {
           updatedTimeSpent.placedStart = currentTime;
         }
-        
-        updatedTimeSpent[stage] = Math.floor((currentTime - updatedTimeSpent[`${stage}Start`]) / 1000); 
+
+        updatedTimeSpent[stage] = Math.floor((currentTime - updatedTimeSpent[`${stage}Start`]) / 1000);
 
         return { ...order, timeSpent: updatedTimeSpent };
       }
       return order;
-    }));
-  };
+    })
+  );
+}, []);
+
+
 
   const addOrder = (newOrder) => {
     if (orders.length < maxOrdersLimit) {
@@ -71,7 +75,7 @@ function App() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [orders]);
+  }, [orders,updateOrderTime]);
 
   return (
     <div className="App">
