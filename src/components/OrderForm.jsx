@@ -16,16 +16,16 @@ const OrderForm = ({ addOrder }) => {
       
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '10px',margin:'10px 20%', fontWeight:'bold' }}>
         <div>
-          <label>Type: </label>
-          <select value={type} onChange={(e) => setType(e.target.value)}>
+          <label>Type : </label>
+          <select className='p-1 m-2' value={type} onChange={(e) => setType(e.target.value)}>
             <option value="Veg">Veg</option>
             <option value="Non-Veg">Non-Veg</option>
           </select>
         </div>
 
         <div>
-          <label>Size: </label>
-          <select value={size} onChange={(e) => setSize(e.target.value)}>
+          <label>Size : </label>
+          <select className='p-1 m-2' value={size} onChange={(e) => setSize(e.target.value)}>
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
             <option value="Large">Large</option>
@@ -33,15 +33,15 @@ const OrderForm = ({ addOrder }) => {
         </div>
 
         <div>
-          <label>Base: </label>
-          <select value={base} onChange={(e) => setBase(e.target.value)}>
+          <label>Base : </label>
+          <select className='p-1 m-2' value={base} onChange={(e) => setBase(e.target.value)}>
             <option value="Thin">Thin</option>
             <option value="Thick">Thick</option>
           </select>
         </div>
       </div>
 
-      <button className='center-order-button' type="submit" > Place Order </button>
+      <div><button className='cutsom-order-button' type="submit" > Place Order </button></div>
     </form>
     
   );

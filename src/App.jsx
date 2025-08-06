@@ -80,7 +80,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Pizza Express🍕🍴</h1>
+        <h1 className='p-2'>Pizza Express🍕🍴</h1>
         <OrderForm addOrder={addOrder} />
         <PizzaBoard orders={orders} updateOrderStage={updateOrderStage} cancelOrder={cancelOrder} />
         <MainDisplay orders={orders} />
